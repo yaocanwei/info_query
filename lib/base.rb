@@ -69,10 +69,7 @@ module Spider
       begin
         start = Time.now()
         url += to_query(options) unless options.empty?
-        # response = RestClient.get url 
         response = RestClient::Request.execute(:url => url, :method => :get, :verify_ssl => false)
-        # page = Nokogiri::HTML response
-        # stations = page.text().scan /([A-Z]+)\|([a-z]+)/ if page.present
         finish = Time.now()
         response_time = ((finish - start) * 1000).round
         return response, response_time
