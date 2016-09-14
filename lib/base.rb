@@ -5,6 +5,7 @@ require 'pry-nav'
 require 'nokogiri'
 require 'open-uri'
 require 'json'
+require 'terminal-table'
 
 module Spider
   class Base

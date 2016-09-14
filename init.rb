@@ -4,6 +4,7 @@ $:.unshift( File.join(APP_ROOT, 'lib') )
 
 require 'base'
 require 'support/parse_station'
+require 'support/time_parser'
 require 'tickets'
 # Spider::Base.new
 # ParseStation.new.stations
